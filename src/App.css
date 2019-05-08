@@ -1,0 +1,24 @@
+:root{
+  --mainBlue:#2a2a72;
+  --darkBlue:#009ffd;
+  --mainWhite:#f3f3f3;
+  --mainDark:#232528;
+  --mainYellow:#ffa400;
+}
+
+body{
+  font-family: 'Roboto Slab', serif !important;
+  background: var(--mainWhite) !important;
+  color: var(--mainDark) !important;
+}
+.text-title{
+ font-family: 'Permanet Marker' , cursive;
+letter-spacing: 0.3rpm;
+text-transform: uppercase;
+}
+.text-blue{
+  color : var(--mainBlue);
+}
+.text-bright{
+  color: var(--mainYellow);
+}
