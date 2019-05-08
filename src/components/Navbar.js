@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Link , BrowserRouter as Router} from 'react-router-dom';
 import logo from '../logo.svg';
+import styled from 'styled-components';
 
 class Navbar extends Component {
     render() {
@@ -15,18 +16,20 @@ class Navbar extends Component {
         <li className="nav-item ml-5">
         <Router>
         <Link to='/' className="nav-link">Products</Link>
-        </Router>
-        </li>
+             </Router>
+         </li>
         
         </ul>
         <Router>
-        <Link to="/cart" className="ml-auto">
-        <button><i className="fas fa-cart-plus"></i>My Cart</button>
-        </Link>
+            <Link to="/cart" className="ml-auto">
+                <button><i className="fas fa-cart-plus"></i>My Cart</button>
+            </Link>
         </Router>
         </nav>
             );
     }
 }
+
+const ButtonContainer = styled.button;
 
 export default Navbar;
